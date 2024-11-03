@@ -1,0 +1,97 @@
+
+@mixin button-primary-default() {
+    border: none;
+    padding: 12px 16px;
+    color: $button-primary-textcolor;
+    background-color: $button-primary-bgcolor;
+    border-radius: 8px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    &:hover {
+      background-color: $button-primary-bgcolor-onhover;
+    }
+  }
+  
+  @mixin button-primary-large() {
+    border: none;
+    padding: 24px 32px;
+    color: $button-primary-textcolor;
+    background-color: $button-primary-bgcolor;
+    border-radius: 8px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    &:hover {
+      background-color: $button-primary-bgcolor-onhover;
+    }
+  }
+  
+  @mixin button-secondary-default() {
+    border: none;
+    padding: 12px 16px;
+    color: $button-secondary-textcolor;
+    background-color: $button-secondary-bgcolor;
+    border: 1px solid #5345bd;
+    border-radius: 8px;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    &:hover {
+      background-color: $button-secondary-bgcolor-onhover;
+    }
+  }
+  
+  @mixin button-secondary-large() {
+    border: none;
+    padding: 24px 32px;
+    color: $button-secondary-textcolor;
+    background-color: $button-secondary-bgcolor;
+    border: 1px solid #5345bd;
+    border-radius: 8px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    &:hover {
+      background-color: $button-secondary-bgcolor-onhover;
+    }
+  }
+  
+  @mixin button-tertiary-default() {
+    border: none;
+    padding: 12px 16px;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 8px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    &:hover {
+      background-color: $button-tertiary-bgcolor-onhover;
+    }
+  }
+  
+  @mixin button-tertiary-large() {
+    border: none;
+    padding: 24px 32px;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 8px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    &:hover {
+      background-color: $button-tertiary-bgcolor-onhover;
+    }
+  }

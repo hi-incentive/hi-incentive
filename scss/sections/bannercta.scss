@@ -1,0 +1,49 @@
+.bannercta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 16px;
+  background-color: #f5f5f5;
+  &-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    &-subtitle {
+      color: #006729;
+      font-family: "DM Mono";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26.04px;
+      text-align: center;
+    }
+    &-title {
+      color: #1c1f25;
+      font-family: "Circular Std";
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 45.54px;
+      text-align: center;
+    }
+  }
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    &-button1 {
+      @include button-primary-default();
+      @media screen and (min-width: 768px) {
+        @include button-primary-large();
+      }
+    }
+    &-button2 {
+      @include button-secondary-default();
+      @media screen and (min-width: 768px) {
+        @include button-secondary-large();
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (min-width: 1024px) {
+      gap: 115px;
+    }
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+    }
+    &-box {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding: 24px 0;
+      &-header {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &-title {
+          color: #1c1f25;
+          font-family: "Circular Std";
+          font-size: 36px;
+          font-weight: 500;
+          line-height: 45.54px;
+          text-align: left;
+        }
+        &-subtitle {
+          color: #006729;
+          font-family: "DM Mono";
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 26.04px;
+          text-align: left;
+        }
+      }
+      &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        &-text {
+          color: #71717a;
+          font-family: "Circular Std";
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 32px;
+          text-align: left;
+        }
+      }
+    }
+    &-image {
+      align-self: center;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 32px;
+      @media screen and (min-width: 1024px) {
+        max-width: 50%;
+        align-self: start;
+      }
+    }
+  }

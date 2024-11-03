@@ -1,0 +1,95 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    @media screen and (min-width: 1024px) {
+      gap: 100px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &-message {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 32px;
+      &-title {
+        color: #1c1f25;
+        font-family: "Circular Std";
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 76.8px;
+        text-align: left;
+      }
+      &-image {
+        max-width: 100%;
+        @media screen and (min-width: 768px) {
+          max-width: 480px;
+        }
+      }
+      &-text {
+        color: #888888;
+        font-family: "Circular Std";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: left;
+      }
+      &-cta {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 24px;
+        &-button1 {
+          @include button-primary-default();
+          @media screen and (min-width: 1024px) {
+            @include button-primary-large();
+          }
+        }
+  
+        &-button2 {
+          @include button-tertiary-default();
+          @media screen and (min-width: 1024px) {
+            @include button-tertiary-large();
+          }
+        }
+      }
+    }
+    &-images {
+      position: relative;
+      height: 340px;
+      &-front {
+        position: absolute;
+        max-width: 180px;
+        border-radius: 24px;
+        top: 123px;
+        left: -40px;
+      }
+      &-back {
+        max-width: 280px;
+        border-radius: 24px;
+      }
+      @media screen and (min-width: 768px) {
+        height: fit-content;
+        &-front {
+          max-width: 300px;
+          left: -120px;
+          bottom: 50px;
+        }
+        &-back {
+          max-width: 400px;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        &-front {
+          max-width: 280px;
+          left: -90px;
+          bottom: 50px;
+        }
+        &-back {
+          max-width: 380px;
+        }
+      }
+    }
+  }
