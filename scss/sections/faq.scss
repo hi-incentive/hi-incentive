@@ -81,10 +81,11 @@
           }
         }
         &-body {
-          display: none;
-          transition: 0.4s;
-          padding: 0 20px 20px 0;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
           &-text {
+            padding: 0 20px 20px 0;
             color: #4b5162;
             font-family: "Circular Std";
             font-weight: 450;

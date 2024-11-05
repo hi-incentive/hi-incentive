@@ -1,6 +1,6 @@
 .footer {
   border-top: 1px solid #e4e4e7;
-  padding-top: 40px;
+  padding: 40px 0;
   & div.container{
     display: flex;
     flex-direction: column;
@@ -34,8 +34,12 @@
           }
           color: #71717a;
           font-family: "Circular Std";
+          font-size: 16px;
           font-weight: 300;
           line-height: 24px;
+          border: none;
+          background-color: #fff;
+          cursor: pointer;
         }
       }
     }

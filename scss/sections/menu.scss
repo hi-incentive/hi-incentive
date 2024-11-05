@@ -28,24 +28,30 @@
         @include button-tertiary-default();
       }
       &-drawer {
-        display: none;
+        width: 0;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: 0.3s;
+        display: flex;
+          flex-wrap: nowrap;
         &.active {
-          display: flex;
+          width: 400px;
+          overflow: visible;
+          padding: 24px;
+          height: 100vh;
         }
         background-color: white;
-        width: fit-content;
-        width: 400px;
-        height: 100vh;
         flex-direction: column;
         justify-content: flex-start;
         align-items: start;
-        padding: 24px;
         gap: 6px;
         &-head {
-          width: 327px;
+          align-self: stretch;
           display: flex;
           align-items: center;
           justify-content: space-between;
+          flex-wrap: nowrap;
           &-close {
             align-self: start;
             @include button-tertiary-default();
@@ -54,10 +60,12 @@
         &-pagesections {
           display: flex;
           flex-direction: column;
+          flex-wrap: nowrap;
           flex-grow: 1;
           gap: 18px;
+          align-self: stretch;
           &-link {
-            @include button-tertiary-default();
+            @include button-tertiary-large();
           }
           &-cta {
             & button {
@@ -68,6 +76,7 @@
         }
         &-foot {
           display: flex;
+          flex-wrap: nowrap;
           flex-direction: column;
           &-text {
             color: #71717a;

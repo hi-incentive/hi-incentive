@@ -3,6 +3,7 @@
 @font-face {
   font-family: "Circular Std";
   src: url("../fonts/Circular-Std-Font.ttf");
+  font-display: swap;
 }
 
 $button-primary-textcolor: #fff;
@@ -55,9 +56,7 @@ section {
 @import "./sections/hero.scss";
 @import "./sections/benefits.scss";
 @import "./sections/whatwedo.scss";
-@import "./sections/testimonials.scss";
 @import "./sections/faq.scss";
-@import "./sections/aboutus.scss";
 @import "./sections/bannercta.scss";
 @import "./sections/footer.scss";
 @import "./components/modal.scss";
