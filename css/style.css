@@ -110,7 +110,6 @@ section {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        flex-grow: 1;
         gap: 18px;
         align-self: stretch; }
         .menu-mobile-drawer-pagesections-link {
@@ -140,6 +139,18 @@ section {
           line-height: 24px; }
           .menu-mobile-drawer-pagesections-cta button:hover {
             background-color: #413597; }
+      .menu-mobile-drawer-lang {
+        flex: 1 0 auto;
+        text-align: right;
+        padding-right: 8px; }
+        .menu-mobile-drawer-lang select {
+          border: none;
+          width: 70px;
+          height: 50px;
+          font-size: 2rem;
+          background-color: white; }
+          .menu-mobile-drawer-lang select:hover {
+            background-color: #e4e4e7; }
       .menu-mobile-drawer-foot {
         display: flex;
         flex-wrap: nowrap;
@@ -162,7 +173,8 @@ section {
     .menu-nav {
       height: 96px;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      align-items: center; }
       .menu-nav-pagesections {
         display: flex;
         justify-content: flex-start;
@@ -173,6 +185,18 @@ section {
           border-radius: 8px; }
           .menu-nav-pagesections-links:hover {
             background-color: #f4f4f5; }
+      .menu-nav-lang {
+        flex: 1 0 auto;
+        text-align: right;
+        padding-right: 8px; }
+        .menu-nav-lang select {
+          border: none;
+          width: 70px;
+          height: 50px;
+          font-size: 2rem;
+          background-color: white; }
+          .menu-nav-lang select:hover {
+            background-color: #e4e4e7; }
       .menu-nav-cta {
         display: flex;
         justify-content: space-between;
@@ -474,11 +498,11 @@ section {
             rotate: 0deg; } }
 
 .faq {
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: 32px; }
   .faq-box {
-    max-width: 874px;
-    margin: 0 auto;
-    margin-bottom: 40px;
     padding: 8px;
     display: flex;
     flex-direction: column;
