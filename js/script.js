@@ -13,7 +13,7 @@ $(document).ready(function () {
   var acc = document.getElementsByClassName("faq-accordion-item-head");
 
   for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
+    acc[i].addEventListener("click", function () {
       this.classList.toggle("active");
       var panel = this.nextElementSibling;
       if (panel.style.maxHeight) {
@@ -61,4 +61,47 @@ $(document).ready(function () {
     dotsClass: "benefits-list-indicators",
     infinite: true,
   });
+
+  $(".dk-lang").each(function() {
+    $(this).css('display', 'none');
+  });
+
+  $(".dk-only").each(function() {
+    $(this).css('display', 'none');
+  });
+
+  var lang = "english";
+  $("select").each(function(){
+    $(this).on("change", function () {
+      lang = $(this).val();
+      if (lang === "english") {
+        $(".dk-lang").each(function() {
+          $(this).css('display', 'none');
+        });
+        $("span.en-lang").each(function() {
+          $(this).css('display', 'inline');
+        });
+        $("section.en-lang").each(function() {
+          $(this).css('display', 'flex');
+        });
+        $(".dk-only").each(function() {
+          $(this).css('display', 'none');
+        });
+      } else {
+        $(".en-lang").each(function() {
+          $(this).css('display', 'none');
+        });
+        $("span.dk-lang").each(function() {
+          $(this).css('display', 'inline');
+        });
+        $("section.dk-lang").each(function() {
+          $(this).css('display', 'flex');
+        });
+        $(".dk-only").each(function() {
+          $(this).css('display', 'initial');
+        });
+      }
+    });
+  })
+
 });
