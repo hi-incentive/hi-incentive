@@ -1,3 +1,24 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #d2d2d2;
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3f71d4; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5345bd; 
+}
 .whatwedo {
   display: flex;
   flex-direction: column;
@@ -37,20 +58,20 @@
       text-align: center;
     }
   }
+  
   &-roadmap {
+    max-width: 100%;
+    
     &-row {
+      
       position: relative;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
+      flex-direction: row;
+      align-items: start;
+      justify-content: left;
       gap: 12px;
-      @media screen and (min-width: 1024px) {
-        flex-direction: row;
-        align-items: normal;
-      }
+      overflow: auto;
       &-item {
-        max-width: 284px;
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -64,6 +85,7 @@
           width: 55px;
         }
         &-box {
+          width: 230px;
 
           &-title {
             color: #3f71d4;
@@ -76,10 +98,6 @@
         }
         & + img {
           align-self: center;
-          rotate: 90deg;
-          @media screen and (min-width: 1024px) {
-            rotate: 0deg;
-          }
         }
       }
     }
