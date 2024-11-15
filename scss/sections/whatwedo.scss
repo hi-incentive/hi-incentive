@@ -63,7 +63,6 @@
     max-width: 100%;
     
     &-row {
-      
       position: relative;
       display: flex;
       flex-direction: row;
@@ -71,6 +70,7 @@
       justify-content: left;
       gap: 12px;
       overflow: auto;
+      padding-bottom: 24px;
       &-item {
         padding: 0;
         display: flex;
