@@ -317,33 +317,18 @@ section {
             .hero-message-cta-button2:hover {
               background-color: #f4f4f5; } }
   .hero-images {
-    position: relative;
-    height: 340px; }
-    .hero-images-front {
-      position: absolute;
-      max-width: 180px;
-      border-radius: 24px;
-      top: 123px;
-      left: -40px; }
+    position: relative; }
     .hero-images-back {
-      max-width: 280px;
-      border-radius: 24px; }
+      max-width: 100%;
+      border-radius: 24px;
+      object-fit: cover; }
     @media screen and (min-width: 768px) {
-      .hero-images {
-        height: fit-content; }
-        .hero-images-front {
-          max-width: 300px;
-          left: -120px;
-          bottom: 50px; }
-        .hero-images-back {
-          max-width: 400px; } }
-    @media screen and (min-width: 1024px) {
-      .hero-images-front {
-        max-width: 280px;
-        left: -90px;
-        bottom: 50px; }
       .hero-images-back {
-        max-width: 380px; } }
+        max-width: 600px; } }
+    @media screen and (min-width: 1024px) {
+      .hero-images-back {
+        max-width: 100%;
+        height: 400px; } }
 
 .benefits {
   display: flex;
