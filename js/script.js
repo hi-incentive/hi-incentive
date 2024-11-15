@@ -62,15 +62,11 @@ $(document).ready(function () {
     infinite: true,
   });
 
-  $(".dk-lang").each(function() {
+  $(".en-lang").each(function() {
     $(this).css('display', 'none');
   });
 
-  $(".dk-only").each(function() {
-    $(this).css('display', 'none');
-  });
-
-  var lang = "english";
+  var lang = "danish";
   $("select").each(function(){
     $(this).on("change", function () {
       lang = $(this).val();

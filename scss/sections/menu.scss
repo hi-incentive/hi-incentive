@@ -22,6 +22,9 @@
         flex: 1 0 0;
         align-items: center;
         justify-content: center;
+        img{
+          max-width: 80px;
+        }
       }
       &-button {
         align-self: right;
@@ -52,6 +55,11 @@
           align-items: center;
           justify-content: space-between;
           flex-wrap: nowrap;
+          &-logo{
+            img{
+              max-width: 80px;
+            }
+          }
           &-close {
             align-self: start;
             @include button-tertiary-default();
@@ -125,6 +133,11 @@
           justify-content: flex-start;
           align-items: center;
           gap: 16px;
+          &-logo{
+            img{
+              max-width: 80px;
+            }
+          }
           &-links {
             &:hover {
               background-color: #f4f4f5;

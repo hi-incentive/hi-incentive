@@ -22,7 +22,9 @@
         flex-direction: column;
         gap: 1.125em;
         &:first-child {
-          width: 100%;
+          img{
+            max-width: 80px;
+          }
           @media screen and (min-width: 1024px) {
             width: fit-content;
           }
