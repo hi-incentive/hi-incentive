@@ -51,7 +51,7 @@ $(document).ready(function () {
     }
   };
 
-  $(".benefits-list").slick({
+  $(".benefits-list.dk-lang").slick({
     arrows: false,
     dots: true,
     slidesToShow: 1,
@@ -61,6 +61,8 @@ $(document).ready(function () {
     dotsClass: "benefits-list-indicators",
     infinite: true,
   });
+
+
 
   $(".en-lang").each(function() {
     $(this).css('display', 'none');
@@ -80,8 +82,17 @@ $(document).ready(function () {
         $("section.en-lang").each(function() {
           $(this).css('display', 'flex');
         });
-        $(".dk-only").each(function() {
-          $(this).css('display', 'none');
+        $(".benefits-list.dk-lang").slick('unslick');
+        $('.benefits-list.en-lang').css('display', 'block');
+        $(".benefits-list.en-lang").slick({
+          arrows: false,
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dotsClass: "benefits-list-indicators",
+          infinite: true,
         });
       } else {
         $(".en-lang").each(function() {
@@ -93,8 +104,17 @@ $(document).ready(function () {
         $("section.dk-lang").each(function() {
           $(this).css('display', 'flex');
         });
-        $(".dk-only").each(function() {
-          $(this).css('display', 'initial');
+        $(".benefits-list.en-lang").slick('unslick');
+        $('.benefits-list.dk-lang').css('display', 'block');
+        $(".benefits-list.dk-lang").slick({
+          arrows: false,
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dotsClass: "benefits-list-indicators",
+          infinite: true,
         });
       }
     });
