@@ -49,7 +49,7 @@ section {
     transition: 0.4s;
     display: flex;
     flex-direction: column;
-    gap: 12px; }
+    gap: 16px; }
     .menu-nav.active {
       height: 100dvh;
       overflow: auto;
@@ -94,6 +94,23 @@ section {
           flex-direction: row; }
           .menu-nav-pagesections-link {
             padding-left: 16px; } }
+    .menu-nav-lang {
+      width: fit-content;
+      position: relative;
+      border: 2px solid #5345bd;
+      background-color: #d8e3f8;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer; }
+      .menu-nav-lang-options {
+        height: 44px;
+        display: flex;
+        flex-direction: row; }
+        .menu-nav-lang-options-flag {
+          padding: 8px;
+          max-height: 100%;
+          background-color: transparent;
+          transition: 0.3s; }
     .menu-nav-cta-button {
       border: none;
       padding: 12px 16px;

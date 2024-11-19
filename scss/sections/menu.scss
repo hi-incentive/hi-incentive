@@ -21,7 +21,7 @@
       align-items: center;
       flex-direction: row;
     }
-    gap: 12px;
+    gap: 16px;
     &-head {
       display: flex;
       justify-content: space-between;
@@ -47,6 +47,7 @@
         @include button-tertiary-default();
         padding-left: 0;
       }
+      // img[class$="dk"].active{}
       @media screen and (min-width: 768px) {
         flex: 1 0 auto;        
         flex-direction: row;
@@ -56,7 +57,24 @@
       }
     }
     &-lang {
-      
+      width: fit-content;
+      position: relative;
+      border: 2px solid #5345bd;
+      background-color: #d8e3f8;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      &-options {
+        height: 44px;
+        display: flex;
+        flex-direction: row;
+        &-flag{
+          padding: 8px;
+          max-height: 100%;
+          background-color: transparent;
+          transition: 0.3s;
+        }
+      }
     }
     &-cta {
       &-button {
