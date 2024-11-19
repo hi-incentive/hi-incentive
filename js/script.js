@@ -1,13 +1,7 @@
 $(document).ready(function () {
-  $("#open-menu").click(() => {
-    $(".menu-mobile").toggleClass("hide");
-    $(".menu-mobile-drawer").toggleClass("active");
-    $("header").css("background-color", "rgba(50, 50, 50, 0.2)");
-  });
-  $("#close-menu").click(() => {
-    $(".menu-mobile").toggleClass("hide");
-    $(".menu-mobile-drawer").toggleClass("active");
-    $("header").css("background-color", "white");
+  
+  $("#menu-icon").click(() => {
+    $('.menu-nav').toggleClass('active')
   });
 
   var acc = document.getElementsByClassName("faq-accordion-item-head");

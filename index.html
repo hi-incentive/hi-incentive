@@ -45,38 +45,52 @@
   <body>
     <header class="menu">
       <nav class="container menu-nav">
-        <div class="menu-nav-pagesections">
+        <div class="menu-nav-head">
           <a
             href="#"
-            class="menu-nav-pagesections-logo">
+            class="menu-nav-head-logo">
             <img
+              width="80px"
+              height="80px"
               src="imgs/logo.png"
               alt="" />
           </a>
-          <div>
+          <img
+          id="menu-icon"
+            width="32px"
+            height="32px"
+            src="./imgs/menu-icon.svg"
+            class="menu-nav-head-icon" />
+        </div>
+
+        <div class="menu-nav-pagesections">
             <a
               type="button"
               href="#whatwedo"
-              class="menu-nav-pagesections-links">
+              class="menu-nav-pagesections-link">
               <span class="dk-lang">Incitamentprogrammer</span>
               <span class="en-lang">What we do</span>
             </a>
             <a
               type="button"
               href="#faq"
-              class="menu-nav-pagesections-links">
+              class="menu-nav-pagesections-link">
               FAQ
             </a>
-          </div>
         </div>
         <div class="menu-nav-lang">
           <select name="lang">
-            <option value="danish" selected>🇩🇰</option>
             <option
-              value="english"
-              >
-              🇺🇸
+              value="danish"
+              selected>
+              <span>
+                <img
+                  src="imgs/dk.svg"
+                  style="width: 60px; height: 32px"
+                  alt="" />
+              </span>
             </option>
+            <option value="english">🇺🇸</option>
           </select>
         </div>
         <div class="menu-nav-cta">
@@ -87,77 +101,9 @@
             <span class="dk-lang">Kom i gang</span>
           </button>
         </div>
-      </nav>
-      <nav class="menu-mobile container">
-        <a
-          href="#"
-          class="menu-mobile-logo">
-          <img
-            src="imgs/logo.png"
-            alt="" />
-        </a>
-        <button
-          id="open-menu"
-          class="menu-mobile-button"
-          type="button">
-          &#9776;
-        </button>
-      </nav>
-      <div class="menu-mobile-drawer">
-        <div class="menu-mobile-drawer-head">
-          <a
-            href="#"
-            class="menu-mobile-drawer-head-logo">
-            <img
-              src="imgs/logo.png"
-              alt="" />
-          </a>
-          <button
-            id="close-menu"
-            class="menu-mobile-drawer-head-close"
-            type="button">
-            &times;
-          </button>
-        </div>
-        <div class="menu-mobile-drawer-pagesections">
-          <a
-            type="button"
-            href="#whatwedo"
-            class="menu-mobile-drawer-pagesections-links">
-            <span class="dk-lang">Incitamentprogrammer</span>
-            <span class="en-lang">What we do</span>
-          </a>
-          <a
-            type="button"
-            href="#faq"
-            class="menu-mobile-drawer-pagesections-links">
-            FAQ
-          </a>
-          <div class="menu-mobile-drawer-pagesections-cta">
-            <button
-              type="button"
-              class="menu-mobile-drawer-pagesections-cta open-modal">
-              <span class="en-lang">Get Started</span>
-              <span class="dk-lang">Kom i gang</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="menu-mobile-drawer-lang">
-          <select name="lang">
-            <option
-              value="danish"
-              selected>
-              🇩🇰
-            </option>
-            <option value="english">🇺🇸</option>
-          </select>
-        </div>
-        <div class="menu-mobile-drawer-foot">
-          <p class="menu-mobile-drawer-foot-text">
-            &copy; 2024 Hi Incentive ApS.
-          </p>
-          <p class="menu-mobile-drawer-foot-text">
+        <div class="menu-nav-copyright">
+          <p class="menu-nav-copyright-text">&copy; 2024 Hi Incentive ApS.</p>
+          <p class="menu-nav-copyright-text">
             <span class="en-lang">
               We are a consultancy and software company. For specific legal
               advice, please consult a licensed attorney.
@@ -168,7 +114,7 @@
             </span>
           </p>
         </div>
-      </div>
+      </nav>
     </header>
     <main>
       <section class="hero container en-lang">
