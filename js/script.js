@@ -70,6 +70,9 @@ $(document).ready(function () {
         $("span.en-lang").each(function() {
           $(this).css('display', 'inline');
         });
+        $("a.en-lang").each(function() {
+          $(this).css('display', 'inline');
+        });
         $("section.en-lang").each(function() {
           $(this).css('display', 'flex');
         });
@@ -90,6 +93,9 @@ $(document).ready(function () {
           $(this).css('display', 'none');
         });
         $("span.dk-lang").each(function() {
+          $(this).css('display', 'inline');
+        });
+        $("a.dk-lang").each(function() {
           $(this).css('display', 'inline');
         });
         $("section.dk-lang").each(function() {
