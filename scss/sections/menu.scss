@@ -17,25 +17,28 @@
     }
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
       align-items: center;
       flex-direction: row;
     }
     gap: 16px;
     &-head {
+      min-height: 90px;
       display: flex;
       justify-content: space-between;
       align-items: center;
 
       &-logo {
-        max-width: 80px;
+        max-width: 120px;
+        img {
+          max-width: 100%;
+        }
       }
       &-icon {
         width: 32px;
         height: 32px;
         @media screen and (min-width: 768px) {
           display: none;
-
         }
       }
     }
@@ -49,30 +52,23 @@
       }
       // img[class$="dk"].active{}
       @media screen and (min-width: 768px) {
-        flex: 1 0 auto;        
+        flex: 1 0 auto;
         flex-direction: row;
-        &-link{
+        &-link {
           padding-left: 16px;
         }
       }
     }
     &-lang {
-      width: fit-content;
-      position: relative;
-      border: 2px solid #5345bd;
-      background-color: #d8e3f8;
-      border-radius: 12px;
-      overflow: hidden;
-      cursor: pointer;
-      &-options {
-        height: 44px;
-        display: flex;
-        flex-direction: row;
-        &-flag{
-          padding: 8px;
-          max-height: 100%;
-          background-color: transparent;
-          transition: 0.3s;
+      select {
+        height: 50px;
+        padding: 8px;
+        font-size: 1rem;
+        border: none;
+        background-color: white;
+        option {
+          color: black;
+          background-color: white;
         }
       }
     }

@@ -59,11 +59,14 @@ section {
         align-items: center;
         flex-direction: row; } }
     .menu-nav-head {
+      min-height: 90px;
       display: flex;
       justify-content: space-between;
       align-items: center; }
       .menu-nav-head-logo {
-        max-width: 80px; }
+        max-width: 120px; }
+        .menu-nav-head-logo img {
+          max-width: 100%; }
       .menu-nav-head-icon {
         width: 32px;
         height: 32px; }
@@ -94,23 +97,15 @@ section {
           flex-direction: row; }
           .menu-nav-pagesections-link {
             padding-left: 16px; } }
-    .menu-nav-lang {
-      width: fit-content;
-      position: relative;
-      border: 2px solid #5345bd;
-      background-color: #d8e3f8;
-      border-radius: 12px;
-      overflow: hidden;
-      cursor: pointer; }
-      .menu-nav-lang-options {
-        height: 44px;
-        display: flex;
-        flex-direction: row; }
-        .menu-nav-lang-options-flag {
-          padding: 8px;
-          max-height: 100%;
-          background-color: transparent;
-          transition: 0.3s; }
+    .menu-nav-lang select {
+      height: 50px;
+      padding: 8px;
+      font-size: 1rem;
+      border: none;
+      background-color: white; }
+      .menu-nav-lang select option {
+        color: black;
+        background-color: white; }
     .menu-nav-cta-button {
       border: none;
       padding: 12px 16px;
@@ -243,10 +238,9 @@ section {
       object-fit: cover; }
     @media screen and (min-width: 768px) {
       .hero-images-back {
-        max-width: 600px; } }
+        max-width: 500px; } }
     @media screen and (min-width: 1024px) {
       .hero-images-back {
-        width: 500px;
         height: 400px; } }
 
 .benefits {
@@ -614,11 +608,13 @@ section {
       display: flex;
       flex-direction: column;
       gap: 1.125em; }
-      .footer-nav-col:first-child img {
-        max-width: 80px; }
-      @media screen and (min-width: 1024px) {
-        .footer-nav-col:first-child {
-          width: fit-content; } }
+      .footer-nav-col:first-child {
+        max-width: 100px; }
+        .footer-nav-col:first-child img {
+          max-width: 100%; }
+        @media screen and (min-width: 1024px) {
+          .footer-nav-col:first-child {
+            width: fit-content; } }
       .footer-nav-col-link {
         color: #71717a;
         font-family: "Circular Std";
